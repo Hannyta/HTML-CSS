@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       body {
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, royalblue, black);
+        }
+
+        header {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            color: oldlace;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: deepskyblue;
+            text-shadow: 3px 5px navy;
+            height: 100px;
+            width: auto;
+        }
+
+        footer {
+            margin: 70px;
+            display: block;
+            text-align: center;
+            font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-size: x-large;
+            color: rgb(1, 2, 82);
+            text-shadow: 1px 2px rgb(44, 48, 51);
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .luna {
+            z-index: 1;
+            position: relative;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            background: lightsteelblue;
+            box-shadow: 0 0 20px snow,
+                        inset -50px 0 30px Gray,
+                        inset 40px 10px 90px ghostwhite;
+        }
+
+        .luna .lunares {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .luna .lunares:first-child {
+            border: solid 4px rgba(121, 121, 121, .7);
+            border-right: solid 0px transparent;
+            border-top: solid 0px transparent;
+            left: 20px;
+            top: 50%;
+        }
+
+        .luna .lunares:nth-child(2) {
+            border: solid 5px rgba(121, 121, 121, .7);
+            border-right: solid 0px transparent;
+            border-top: solid 0px transparent;
+            left: 100px;
+            top: 10%;
+        }
+        
+        .luna .lunares:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            border: solid 4px rgba(121, 121, 121, .7);
+            border-right: solid 0px transparent;
+            border-top: solid 1px rgba(121, 121, 121, .7);;
+            left: 50%;
+            top: 50%;
+            box-shadow: 0 0 0px lightgrey,
+                        inset -10px 0 10px Gray;
+        }
+        
+        .luna .lunares:nth-child(4) {
+            background: rgba(121, 121, 121, .7);
+            border-right: solid 0px transparent;
+            border-top: solid 1px rgba(121, 121, 121, .7);;
+            left: 21%;
+            top: 22%;
+        }
+
+        .luna .lunares:nth-child(5) {
+            width: 30px;
+            height: 30px;
+            border: solid 7px rgba(98, 105, 114, 0.7);
+            border-right: solid 0px transparent;
+            border-bottom: solid 0px transparent;
+            left: 40%;
+            top: 85%;
+        }
+
+        .luna .lunares:nth-child(6) {
+            width: 30px;
+            height: 30px;
+            background: rgba(98, 105, 114, 0.7);
+            border-right: solid 0px transparent;
+            border-top: solid 0px transparent;
+            left: 70%;
+            top: 25%;
+        }
+
+        .luna .lunares:nth-child(7) {
+            z-index: 2;
+            background: rgba(88, 88, 88, 0.9);
+            border-right: solid 0px transparent;
+            border-bottom: solid 0px transparent;
+            left: 78%;
+            top: 73%;
+        }
+
+        .luna .lunares:nth-child(8) {
+            z-index: 3;
+            background: rgba(100, 100, 100, .9);
+            border-right: solid 0px transparent;
+            border-bottom: solid 0px transparent;
+            left: 81%;
+            top: 70%;
+        }
+
+        .luna .lunares:last-child {
+            width: 25px;
+            height: 45px;
+            border: solid 2px rgba(109, 109, 109, 0.7);
+            border-top: solid 0px transparent;
+            border-bottom: solid 0px transparent;
+            left: 32%;
+            top: 37%;
+            box-shadow: 0px 0px 0.4px lightgrey,
+                        inset 3px 0 8px slategrey;
+            transform: rotate(35deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Reto de z-indez</h1>
+    </header>
+    <section>
+        <div class="luna">
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+            <div class="lunares"></div>
+        </div>
+        <div class="Estrellas">
+            <div class="triangulo"></div>
+        </div>
+    </section>
+    <footer>
+        <span>¡No pares de aprender!</span>
+    </footer>
+</body>
+</html>
